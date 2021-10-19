@@ -22,6 +22,6 @@
         "regenerator": true
       }
     ],
-    "@babel/plugin-transform-modules-amd"
+    "@babel/plugin-transform-modules-commonjs"
   ]
 }
