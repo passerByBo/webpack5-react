@@ -1,0 +1,46 @@
+{
+  "name": "webpack5-react",
+  "version": "1.0.0",
+  "description": "webpack5 react源码  兼容ie webpack5+react生态架构",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "webpack --config ./config/webpack.prod.js",
+    "build:dev": "webpack --config ./config/webpack.dev.js",
+    "start:prod": "webpack server --config ./config/webpack.prod.js",
+    "start:dev": "webpack server --config ./config/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/passerByBo/webpack5-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/passerByBo/webpack5-react/issues"
+  },
+  "homepage": "https://github.com/passerByBo/webpack5-react#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-modules-amd": "^7.14.5",
+    "@babel/plugin-transform-modules-umd": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.15.4",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.4.0",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/runtime-corejs3": "^7.15.4",
+    "core-js": "^3.18.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
