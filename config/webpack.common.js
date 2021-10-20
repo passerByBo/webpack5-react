@@ -36,15 +36,22 @@ module.exports = {
                 ]
             },
             {
-                test: /\.m?js$/,
+                test: /\.js$/, 
                 exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-transform-runtime']
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        // options: {
+                        //     presets: [
+                        //         '@babel/preset-env'
+                        //     ],
+                        //     plugins: [
+                        //         [require("@babel/plugin-transform-runtime"), { "legacy": true }],
+                        //         [require("@babel/plugin-proposal-class-properties"), { "legacy": true }]
+                        //     ]
+                        // }
                     }
-                }
+                ]
             }
         ]
     },

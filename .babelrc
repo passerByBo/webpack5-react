@@ -1,0 +1,40 @@
+// {
+//   "presets": [
+//     [
+//       "@babel/preset-env",
+//       {
+//         "useBuiltIns": "usage",
+//         "corejs": 3,
+//         "targets": {
+//           "chrome": "58",
+//           "ie": "11"
+//         }
+//       }
+//     ]
+//   ],
+//   "plugins": [
+//     [
+//       "@babel/plugin-transform-runtime",
+//       {
+//         "absoluteRuntime": false,
+//         "corejs": false,
+//         "helpers": true,
+//         "regenerator": true
+//       }
+//     ],
+//     "@babel/plugin-transform-modules-commonjs"
+//   ]
+// }
+
+
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
+      }
+    ]
+  ]
+}
