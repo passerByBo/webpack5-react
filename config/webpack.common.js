@@ -19,37 +19,28 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.(ts|js)x?$/,
-                use: [
-                    //ts-loader想要兼容ie需要加入Array.includes Promise等所有不兼容的polyfill
-                    // {
-                    //     loader: 'ts-loader',
-                    //     options: {
-                    //         transpileOnly: true
-                    //     }
-                    // }
-                    //使用babel-loader编译
-                    {
-                        loader: 'babel-loader'
-                    }
-                ]
-            },
+            // {
+            //     test: /\.(ts|js)x?$/,
+            //     use: [
+            //         //ts-loader想要兼容ie需要加入Array.includes Promise等所有不兼容的polyfill
+            //         // {
+            //         //     loader: 'ts-loader',
+            //         //     options: {
+            //         //         transpileOnly: true
+            //         //     }
+            //         // }
+            //         //使用babel-loader编译
+            //         {
+            //             loader: 'babel-loader'
+            //         }
+            //     ]
+            // },
             {
                 test: /\.js$/, 
                 exclude: /(node_modules|bower_components)/,
                 use: [
                     {
                         loader: 'babel-loader',
-                        // options: {
-                        //     presets: [
-                        //         '@babel/preset-env'
-                        //     ],
-                        //     plugins: [
-                        //         [require("@babel/plugin-transform-runtime"), { "legacy": true }],
-                        //         [require("@babel/plugin-proposal-class-properties"), { "legacy": true }]
-                        //     ]
-                        // }
                     }
                 ]
             }

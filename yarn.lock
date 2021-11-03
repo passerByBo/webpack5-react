@@ -909,10 +909,10 @@
     "@babel/plugin-transform-react-jsx-development" "^7.14.5"
     "@babel/plugin-transform-react-pure-annotations" "^7.14.5"
 
-"@babel/runtime-corejs2@^7.15.4":
-  version "7.15.4"
-  resolved "https://registry.nlark.com/@babel/runtime-corejs2/download/@babel/runtime-corejs2-7.15.4.tgz#dda5554d18e2ebd4e374e73708590e72e1e674f7"
-  integrity sha1-3aVVTRji69TjdOc3CFkOcuHmdPc=
+"@babel/runtime-corejs2@^7.16.0":
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.16.0.tgz#1352db0e48b6e7715dfdd41f541c903e2cff3b28"
+  integrity sha512-PICpXRloQQ7AtgN+8xYbOxaopQ1vMB9RV0tsVe5ikx5/6y7iO8tYQiyAf3hIYxwz8AohnSXBuXorBacFOs21xg==
   dependencies:
     core-js "^2.6.5"
     regenerator-runtime "^0.13.4"
